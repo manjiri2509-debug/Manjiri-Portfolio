@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manjiri Agavane | Aspiring Management Professional</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Inter font */
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Here is the pastel yellow background you requested */
+            background-color: #FFFDF5; /* A very light, professional pastel yellow */
+        }
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <!-- Header & Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo / Name -->
+                <div class="flex-shrink-0">
+                    <a href="#about" class="text-2xl font-bold text-slate-800 hover:text-indigo-600 transition-colors duration-300">Manjiri Agavane</a>
+                </div>
+                <!-- Navigation Links -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">About</a>
+                        <a href="#experience" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Experience</a>
+                        <a href="#education" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Education</a>
+                        <a href="#skills" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Skills</a>
+                        <a href="#projects" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Projects</a>
+                        <a href="#contact" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Contact</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="bg-gray-100 inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-700 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false" onclick="toggleMenu()">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Icon for menu (hamburger) -->
+                        <svg id="menu-icon-open" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <!-- Icon for close (X) -->
+                        <svg id="menu-icon-close" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- Mobile Menu, hidden by default -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#experience" class="text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Experience</a>
+                <a href="#education" class="text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Education</a>
+                <a href="#skills" class="text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section: Hero / About Me -->
+        <section id="about" class="py-20 md:py-32">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+                    <!-- Text Content -->
+                    <div class="md:col-span-2">
+                        <span class="text-indigo-600 font-semibold">Hello, I'm</span>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mt-2">
+                            Manjiri Rajendra Agavane
+                        </h1>
+                        <p class="text-xl md:text-2xl text-slate-700 font-medium mt-4">
+                            Aspiring Management Professional | Leadership | Strategy | Operations
+                        </p>
+                        <p class="text-lg text-slate-600 mt-8 leading-relaxed">
+                            I’m driven by a deep passion for leadership, management, and continuous learning. With a background in Biotechnology and professional experience at iTeach Schools, I’ve developed strong organizational and communication skills that fuel my ability to manage teams, projects, and operations effectively.
+                        </p>
+                        <p class="text-lg text-slate-600 mt-4 leading-relaxed">
+                            Now pursuing my MBA, I aim to transition into the management domain, where I can apply my analytical approach, empathy, and strategic thinking to lead purposeful, people-centered change.
+                        </p>
+                        <div class="mt-10 flex flex-wrap gap-4">
+                            <a href="#contact" class="inline-block bg-indigo-600 text-white font-medium px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:-translate-y-0.5">
+                                Get in Touch
+                            </a>
+                            <a href="https://linkedin.com/in/manjiri-a-026409271" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-slate-700 font-medium px-6 py-3 rounded-lg shadow-md hover:bg-gray-50 transition duration-300 border border-gray-200 transform hover:-translate-y-0.5">
+                                View LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Photo Placeholder -->
+                    <div class="flex justify-center md:justify-end">
+                        <div class="w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl ring-8 ring-white ring-opacity-50">
+                            <!-- 
+                                ************************************
+                                * ADD YOUR PHOTO HERE
+                                ************************************
+                                
+                                1. Add your photo (e.g., "my-photo.jpg") to the same folder as this index.html file.
+                                2. Replace the 'src' value in the <img> tag below with the name of your photo file.
+                                3. The placeholder image will be replaced by your picture.
+                            -->
+                            <img 
+                                src="https://placehold.co/400x400/FFFDF5/475569?text=Add+Your+Photo" 
+                                alt="A professional photo of Manjiri Agavane" 
+                                class="w-full h-full object-cover"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Work Experience -->
+        <section id="experience" class="py-20 md:py-24 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-slate-900 mb-16">
+                    Work Experience
+                </h2>
+                
+                <!-- Timeline Container -->
+                <div class="relative">
+                    <!-- Timeline Line (static) -->
+                    <div class="absolute left-2.5 top-2 bottom-0 w-0.5 bg-indigo-100 md:left-1/2 md:-translate-x-1/2"></div>
+                    
+                    <!-- Timeline Item: iTeach Schools -->
+                    <div class="relative group md:flex md:items-start md:odd:flex-row-reverse">
+                        <!-- Content -->
+                        <div class="w-full md:w-1/2 md:odd:text-right md:even:pl-12 md:odd:pr-12">
+                            <span class="block text-sm text-gray-500 mb-1">May 2025 – Present | Navi Mumbai (Nerul)</span>
+                            <h3 class="text-2xl font-semibold text-slate-800">Associate Teacher</h3>
+                            <p class="text-lg font-medium text-indigo-600">iTeach Schools</p>
+                            <p class="text-slate-600 mt-4">
+                                As a recent graduate, I began my professional journey with this non-profit organization, which partners with government schools to ensure quality education for all. Beyond the classroom, I have taken up leadership and organizational roles, contributing to the smooth functioning of academic and operational systems.
+                            </p>
+                            <div class="mt-6 text-left"> <!-- Force text-left for lists -->
+                                <h4 class="text-md font-semibold text-slate-700 mb-2">Key Responsibilities & Achievements:</h4>
+                                <ul class="list-disc list-inside space-y-2 text-slate-600">
+                                    <li>Planned and managed 2–3 school-wide initiatives, including literacy drives.</li>
+                                    <li>Designed academic schedules, tracked syllabus completion, and coordinated operations.</li>
+                                    <li>Worked with senior teachers to ensure smooth academic operations.</li>
+                                    <li>Managed classroom systems, conducted reflections, and guided students.</li>
+                                    <li>Contributed to lesson planning and data-driven assessments.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline Dot -->
+                        <div class="absolute left-0 top-1 w-5 h-5 bg-indigo-500 rounded-full border-4 border-white md:left-1/2 md:-translate-x-1/2"></div>
+                    </div>
+                    <!-- End Timeline Item -->
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Educational Background -->
+        <section id="education" class="py-20 md:py-24">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-slate-900 mb-16">
+                    Educational Background
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card 1: B.Sc. -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-indigo-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <h3 class="text-xl font-semibold text-slate-800">B.Sc. in Biotechnology</h3>
+                        <p class="text-indigo-600 font-medium mt-1">K.C. College, University of Mumbai</p>
+                        <p class="text-gray-500 text-sm mt-2">2022 – 2025</p>
+                        <p class="text-gray-700 font-medium mt-3">CGPA: 8.01 / 10 (Grade A)</p>
+                    </div>
+                    <!-- Card 2: Class 12 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-indigo-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <h3 class="text-xl font-semibold text-slate-800">Higher Secondary (Class 12)</h3>
+                        <p class="text-indigo-600 font-medium mt-1">Jaipuriar School, CBSE Board</p>
+                        <p class="text-gray-500 text-sm mt-2">Year of Completion: 2021</p>
+                        <p class="text-gray-700 font-medium mt-3">Percentage: 76.4%</p>
+                    </div>
+                    <!-- Card 3: Class 10 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-indigo-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <h3 class="text-xl font-semibold text-slate-800">Secondary (Class 10)</h3>
+                        <p class="text-indigo-600 font-medium mt-1">North Point School, ICSE Board</p>
+                        <p class="text-gray-500 text-sm mt-2">Year of Completion: 2019</p>
+                        <p class="text-gray-700 font-medium mt-3">Percentage: 76.6%</p>
+                    </div>
+                    <!-- Card 4: Gap Year -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-indigo-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <h3 class="text-xl font-semibold text-slate-800">Gap Year</h3>
+                        <p class="text-indigo-600 font-medium mt-1">Self-Study</p>
+                        <p class="text-gray-500 text-sm mt-2">2021 – 2022</p>
+                        <p class="text-gray-700 mt-3">Dedicated one year to entrance exam preparation and career planning.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Primary Skills -->
+        <section id="skills" class="py-20 md:py-24 bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-slate-900 mb-16">
+                    Primary Skills & Areas of Expertise
+                </h2>
+                <div class="flex flex-wrap justify-center gap-3 md:gap-4">
+                    <!-- Skill Pills -->
+                    <span class="bg-indigo-100 text-indigo-800 text-sm md:text-base font-medium px-4 py-2 rounded-full shadow-sm">Leadership & Team Management</span>
+                    <span class="bg-indigo-100 text-indigo-800 text-sm md:text-base font-medium px-4 py-2 rounded-full shadow-sm">Project Planning & Execution</span>
+                    <span class="bg-indigo-100 text-indigo-800 text-sm md:text-base font-medium px-4 py-2 rounded-full shadow-sm">Operational & Time Management</span>
+                    <span class="bg-indigo-100 text-indigo-800 text-sm md:text-base font-medium px-4 py-2 rounded-full shadow-sm">Strategic Thinking & Problem-Solving</span>
+                    <span class="bg-indigo-100 text-indigo-800 text-sm md:text-base font-medium px-4 py-2 rounded-full shadow-sm">Effective Communication</span>
+                    <span class="bg-indigo-100 text-indigo-800 text-sm md:text-base font-medium px-4 py-2 rounded-full shadow-sm">Decision-Making & Adaptability</span>
+                    <span class="bg-indigo-100 text-indigo-800 text-sm md:text-base font-medium px-4 py-2 rounded-full shadow-sm">Interpersonal & Collaboration Skills</span>
+                    <span class="bg-indigo-100 text-indigo-800 text-sm md:text-base font-medium px-4 py-2 rounded-full shadow-sm">Creative & Reflective Thinking</span>
+                    <span class="bg-indigo-100 text-indigo-800 text-sm md:text-base font-medium px-4 py-2 rounded-full shadow-sm">Organization & Attention to Detail</span>
+                    <span class="bg-indigo-100 text-indigo-800 text-sm md:text-base font-medium px-4 py-2 rounded-full shadow-sm">Continuous Learning & Growth Mindset</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Notable Projects -->
+        <section id="projects" class="py-20 md:py-24">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-slate-900 mb-16">
+                    Notable Projects
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Project Card 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <h3 class="text-xl font-semibold text-slate-800">Literacy and Reading Fluency Drive</h3>
+                        <p class="text-indigo-600 font-medium text-sm mt-1">Role: Team Member | iTeach Schools (2025)</p>
+                        <p class="text-gray-600 mt-4 flex-grow">
+                            Contributed to a month-long initiative to improve reading fluency and comprehension among primary students. Designed reading activities, tracked progress, and implemented assessment-based strategies.
+                        </p>
+                        <div class="mt-4 border-t border-gray-100 pt-4">
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Skills Demonstrated:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded-full">Collaboration</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded-full">Coordination</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded-full">Problem-Solving</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <h3 class="text-xl font-semibold text-slate-800">Classroom Systems & Operations Mgmt</h3>
+                        <p class="text-indigo-600 font-medium text-sm mt-1">Role: Team Member | iTeach Schools (2025)</p>
+                        <p class="text-gray-600 mt-4 flex-grow">
+                            Assisted in developing systems for better academic tracking and classroom organization. Managed lesson planning and daily scheduling.
+                        </p>
+                        <div class="mt-4 border-t border-gray-100 pt-4">
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Skills Demonstrated:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded-full">Time Management</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded-full">Organization</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded-full">Teamwork</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <h3 class="text-xl font-semibold text-slate-800">Biotechnology Research Project</h3>
+                        <p class="text-indigo-600 font-medium text-sm mt-1">Role: Student Researcher | K.C. College (2024–2025)</p>
+                        <p class="text-gray-600 mt-4 flex-grow">
+                            Conducted research on microbial growth and antibiotic resistance using bioinformatics tools. Analyzed experimental data and presented findings.
+                        </p>
+                        <div class="mt-4 border-t border-gray-100 pt-4">
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Skills Demonstrated:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded-full">Research</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded-full">Analytical Thinking</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded-full">Documentation</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 4: NEW -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <h3 class="text-xl font-semibold text-slate-800">Event and Activity Coordination</h3>
+                        <p class="text-indigo-600 font-medium text-sm mt-1">Role: Team Member | iTeach Schools (2025)</p>
+                        <p class="text-gray-600 mt-4 flex-grow">
+                            Helped organize exhibitions, reflection activities, and student events. Managed event logistics and coordination between different stakeholders.
+                        </p>
+                        <div class="mt-4 border-t border-gray-100 pt-4">
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Skills Demonstrated:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded-full">Event Planning</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded-full">Teamwork</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded-full">Adaptability</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 5: NEW -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <h3 class="text-xl font-semibold text-slate-800">Professional Growth & Portfolio Dev.</h3>
+                        <p class="text-indigo-600 font-medium text-sm mt-1">Role: Independent Learner (Ongoing)</p>
+                        <p class="text-gray-600 mt-4 flex-grow">
+                            Building a professional portfolio while pursuing MBA studies. Integrating leadership and management theories with practical applications and case studies.
+                        </p>
+                        <div class="mt-4 border-t border-gray-100 pt-4">
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Skills Demonstrated:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded-full">Initiative</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded-full">Self-Learning</span>
+                                <span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded-full">Strategic Thinking</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Contact -->
+        <section id="contact" class="py-20 md:py-32 bg-white">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+                    Get in Touch
+                </h2>
+                <p class="text-lg text-slate-600 mt-6 leading-relaxed">
+                    I am actively developing skills for roles in Project Coordination, Strategic Planning, and Operational Management. I'm always open to discussing new opportunities and connecting with other professionals.
+                </p>
+                <div class="flex flex-wrap justify-center gap-8 md:gap-12 mt-12">
+                    <!-- Email -->
+                    <a href="mailto:manjiri2509@gmail.com" class="flex flex-col items-center text-slate-600 hover:text-indigo-600 group transition-all duration-300">
+                        <!-- Mail Icon -->
+                        <svg class="w-10 h-10 mb-2 text-slate-400 group-hover:text-indigo-600 transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <span class="font-medium">manjiri2509@gmail.com</span>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/in/manjiri-a-026409271" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center text-slate-600 hover:text-indigo-600 group transition-all duration-300">
+                        <!-- LinkedIn Icon -->
+                        <svg class="w-10 h-10 mb-2 text-slate-400 group-hover:text-indigo-600 transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        <span class="font-medium">LinkedIn Profile</span>
+                    </a>
+                    <!-- Phone -->
+                    <a href="tel:+919326984311" class="flex flex-col items-center text-slate-600 hover:text-indigo-600 group transition-all duration-300">
+                        <!-- Phone Icon -->
+                        <svg class="w-10 h-10 mb-2 text-slate-400 group-hover:text-indigo-600 transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span class="font-medium">+91 93269 84311</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-gray-100 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm text-slate-500">
+                &copy; 2025 Manjiri Rajendra Agavane. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Simple JS for Mobile Menu Toggle -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const openIcon = document.getElementById('menu-icon-open');
+            const closeIcon = document.getElementById('menu-icon-close');
+            
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                openIcon.classList.add('hidden');
+                openIcon.classList.remove('block');
+                closeIcon.classList.add('block');
+                closeIcon.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+                openIcon.classList.add('block');
+                openIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+                closeIcon.classList.remove('block');
+            }
+        }
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                const menu = document.getElementById('mobile-menu');
+                if (!menu.classList.contains('hidden')) {
+                    toggleMenu();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
